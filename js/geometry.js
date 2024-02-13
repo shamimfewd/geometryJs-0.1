@@ -24,5 +24,24 @@ function calculateTriangleArea() {
 
 // rectangle==========================
 function calculateRectangleArea() {
-  console.log();
+  //get length of the rectangle
+  const rectangleLengthInput = document.getElementById("rectangle-length");
+  const lengthText = rectangleLengthInput.value;
+  const length = parseFloat(lengthText);
+  console.log(length);
+
+  //get width of the rectangle
+  const rectangleWidthInput = document.getElementById("rectangle-width");
+  const widthText = rectangleWidthInput.value
+  const width = parseFloat(widthText)
+  console.log(width);
+
+  //calculate rectangle area
+  const area = length * width
+  console.log('area of the rectangle: ', area);
+
+  //display rectangle area
+
+  const rectangleAreaSpan = document.getElementById('rectangle-area')
+  rectangleAreaSpan.innerText = area
 }

@@ -40,7 +40,7 @@
                 <span>cm</span>
                 <input
                   id="triangle-height"
-                  class="w-24  bg-gray-200 text-2xl p-2 rounded-sm"
+                  class="w-24 bg-gray-200 text-2xl p-2 rounded-sm"
                   type
                   type="text"
                   placeholder="h"
@@ -50,7 +50,7 @@
 
               <div>
                 <p class="text-2xl">
-                  Area: <span id="triangle-area"></span> <span></span>cm<sup
+                  Area: <span id="triangle-area">0</span> <span></span>cm<sup
                     >2</sup
                   >
                 </p>
@@ -77,23 +77,34 @@
               <!-- ================ -->
               <div class="">
                 <input
-                  id=""
+                  id="rectangle-length"
                   class="w-24 mb-1 text-2xl p-2 bg-gray-200 rounded-sm"
                   type="text"
                   placeholder="l"
                 />
                 <span>cm</span>
                 <input
-                  id=""
+                  id="rectangle-width"
                   class="w-24 text-2xl p-2 bg-gray-200 rounded-sm"
                   type="text"
                   placeholder="w"
                 />
                 <span>cm</span>
               </div>
+
+              <div>
+                <p class="text-2xl">
+                  Area: <span id="rectangle-area">0</span> <span>cm</span><sup>2</sup>
+                </p>
+              </div>
               <!-- ====================== -->
               <div class="card-actions justify-end">
-                <button onclick="calculateRectangleArea()" class="btn w-full btn-primary">Buy Now</button>
+                <button
+                  onclick="calculateRectangleArea()"
+                  class="btn w-full btn-primary"
+                >
+                  Buy Now
+                </button>
               </div>
             </div>
           </div>
